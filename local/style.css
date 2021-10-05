@@ -1,0 +1,27 @@
+.container{
+    text-align: center;
+}
+input{
+    width: 12rem;
+}
+.result{
+    border: 2px solid red;
+    width: 16rem;
+    margin: 8px auto;
+    background: rgb(30 177 210);
+    border-radius: 8px;
+}
+.result p{
+    font: 1em sans-serif;
+    text-decoration-line: underline;
+    text-decoration-color: rgb(43, 43, 42);
+    text-decoration-style: solid;
+    text-underline-offset: 2px;
+}
+.temp{
+    margin: 0px;
+}
+h3{
+    margin:0px;
+    padding-bottom: 8px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo.jpg" alt="">
+            <h1>Weather Checker</h1>
+            <p>Check current weather status of any city</p>
+        </header>
+        <form action="/" method="POST">
+            <input type="text" name="city" placeholder="Type a city then press enter">
+        </form>
+        <div class="result">
+            <% if(city !== null) {%>
+                <p class="city"><%= city %></p>
+            <% } %>    
+            <% if(temp !== null) {%>
+                <h2 class="temp"><%= temp %><sup>o</sup>C</h2>
+            <% } %>    
+            <div class="icons">
+                <% if(icon !== null) {%>
+                    <img src="https://openweathermap.org/img/w/<%= icon %>.png" alt="" class="icon">
+                <% } %>
+                <% if(des !== null) {%>    
+                    <h3><%= des %></h3>
+                <% } %>    
+            </div>
+        </div>
+    </div>
+</body>
+</html>
